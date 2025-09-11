@@ -3,7 +3,7 @@
 	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Julia">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>Howdy FED2526</title>
@@ -13,7 +13,58 @@
 </head>
 
 <body>
-	<h1>Howdy FED2526</h1>
+	<main>
+		<!-- hero sectie -->
+		<section>
+			<h1>Smaken</h1>
+			<p>Wij hebben voor iedereen wel een favoriete Ben & Jerry’s smaak. Van onze klassieker Cookie Dough, onze vegan varianten en nog veel meer fairrukkelijke smaken vol met Chunks en Swirls! Ontdek ze allemaal. Grab a spoon! Heerlijk voor op de bank, als dessert of onderweg.</p>
+			<img src="images/heroIJS.avif" alt="Ben en Jerrys ijs">
+		</section>
+		<section>
+			<!-- nog aanpassen -->
+			<h2 class="visually-hidden">Productoverzicht</h2> 
+			<form>
+				<fieldset>
+					<input type="search" id="zoek" name="zoeken" placeholder="Search All Our Flavors">
+					<select id="category" name="category" required>
+					<option value="">Browse By Category</option>
+					<option value="IJs pints">IJs pints</option>
+					<option value="Sundaes">Sundaes</option>
+					<option value="Ice cream bites">Ice cream buttons</option>
+					</select>
+				</fieldset>
+			</form>
+			<div>
+				<h3>IJs pints</h3>
+				<a href="https://www.benjerry.nl/smaken/pints">Alles bekijken</a>
+			</div>
+			<!-- container voor artikelen -->
+			<ul>
+				<li>
+					<article>
+						<h4>Brookieees & Cream</h4>
+						<img src="images/Brookies-and-Cream.avif" alt="Brookies & cream ijs">
+						<a href="https://www.benjerry.nl/smaken/brookieees-and-cream-origineel-ijs/pint">Nu kopen</a>
+					</article>
+				</li>
+				<li>
+					<article>
+						<h4>Caramel Chew Chew</h4>
+						<img src="images/CaramelChewChew.avif" alt="Caramel chew chew ijs">
+						<a href="https://www.benjerry.nl/smaken/caramel-chew-chew-origineel-ijs/pint">Nu kopen</a>
+					</article>
+				</li>
+				<li>
+					<article>
+						<h4>Chocolate Fudge Brownie</h4>
+						<img src="images/ChocolateFudgeBrownie.avif">
+						<a href="https://www.benjerry.nl/smaken/chocolate-fudge-brownie-origineel-ijs/pint">Nu kopen</a>
+					</article>
+				</li>
+			</ul>
+		</section>
+	</main>
+	
 
 	<script defer src="scripts/script.js"></script>
 </body>
