@@ -57,6 +57,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  Er zitten geen labels in, 
+  html validator geeft een hoop errors,
+  Er is een sectie zonder H2
+  Artikelen bestaan niet uit lists, wat wel beter is
+  Bovenste plaatje heeft geen alt tekst, plaatje van een koe wordt ook opgelezen in screenreader, ondanks dat deze niks toevoegt
+  Er staat vaak een alt class bij een foto, zonder alt tekst over wat de foto is
+  dark mode deed het niet, contrast wel
+
 
 </details>
 
@@ -88,17 +96,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  basis, simpele html gaat best goed, lukt zonder te hoeven opzoeken oid. Gaat soepeler dan vorig jaar maar het is wel veel ophalen want lang niet gedaan. Paar kleine dingetjes nog lastig, zoals youtube video, die moet ik soms dan wel opzoeken.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Joost                     | Melissa          | Noa             | ik                |
+  | vormgeving header& footer | checken html     | tekst resposive | youtube filmpje   |
+  | gradient op fotos         | als tijd, css    | html checken    | uitwerking footer |
+  | responsive caroussel      |                  |                 |                   |
+  
 
 
   ### Verslag van meeting
