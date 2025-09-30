@@ -1,0 +1,96 @@
+/*/
+/* CUSTOM PROPERTIES */
+
+@font-face {
+	font-family: 'proxima nova';
+	src: url(../fonts/proxima-nova.woff2);
+}
+
+@font-face {
+	font-family: 'chunk rethunk';
+	src: url(../fonts/chunk-rethunk.woff2);
+}
+
+:root {
+	/* startje */
+	--textkleur:#141414;
+	--wit:#ffffff;
+	--lichtblauw:#77ddf5;
+	--donkerblauw:#001e80;
+	--footerEerste:#c4e7f3;
+	--footerTweede:#2a5729;
+    --geel: #ffbc0e;
+}
+
+
+
+/* CSS REMEDY */
+*, *::after, *::before {
+    box-sizing:border-box;
+}
+
+h1 {
+	font-family: 'chunk rethunk';
+}
+
+h2 {
+	font-family: 'chunk rethunk';
+}
+
+h3 {
+	font-family: 'chunk rethunk';
+}
+
+h4 {
+	font-family: 'chunk rethunk';
+}
+
+p {
+	font-family: 'proxima nova';
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+    background-color: #bbbbbb;
+	width: 100%;
+}
+
+header img {
+	width: 10em;
+}
+
+section:first-of-type{
+	display: flex;
+	flex-direction: column; 
+}
+
+section:first-of-type img{
+  	order: -1; 
+}
+
+main > section:nth-of-type(2) span{
+	border: 0.125rem solid var(--textkleur);
+	border-radius: 999rem;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 9em
+}
+
+main > section:nth-of-type(2) a{
+	font-family: 'proxima nova';
+	color: var(--textkleur);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+main > section:nth-of-type(2) li{
+	list-style: none;
+}
+/* span? voor nu kopen button */

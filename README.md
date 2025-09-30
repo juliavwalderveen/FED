@@ -113,6 +113,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - a voor het hele artikel
+  - Youtube filmpje nog fixen
+  - html is goed
   
 
 </details>
@@ -133,11 +135,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Noa             | Melissa         | ik   | Randi        |
+  | img 1e sectie.  | ---                | Mag mn span.    | ---              |
+  | 3e sectie tekst | en dit             | Youtube filmpje | en dan ik dat    |
+  | scrollend.      | dit als er tijd is | werkt niet.  |
+  | ...             | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
