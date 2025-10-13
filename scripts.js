@@ -11,3 +11,21 @@ deButton.onclick = toggleMenu;
 function toggleMenu() {
   deUl.classList.toggle("toonMenu");
 }
+
+// header inklappen, met behulp van Chatgpt
+let vorigeScrollPositie = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const huidigeScrollPositie = window.scrollY;
+  const header = document.querySelector("header");
+
+  if (huidigeScrollPositie > vorigeScrollPositie && huidigeScrollPositie > 80) {
+    // Je scrolt naar beneden → verberg header
+    header.classList.add("verberg");
+  } else {
+    // Je scrolt omhoog → toon header
+    header.classList.remove("verberg");
+  }
+
+  vorigeScrollPositie = huidigeScrollPositie;
+});

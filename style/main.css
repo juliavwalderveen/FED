@@ -1,0 +1,361 @@
+/*/
+/* CUSTOM PROPERTIES */
+/* 1 met custom properties (kleuren, fonts, header & footer), main,  */
+@font-face {
+	font-family: 'proxima nova';
+	src: url(../fonts/proxima-nova.woff2);
+}
+
+@font-face {
+	font-family: 'chunk rethunk';
+	src: url(../fonts/chunk-rethunk.woff2);
+}
+
+:root {
+	/* startje */
+	--textkleur:#141414;
+	--wit:#ffffff;
+	--lichtblauw:#77ddf5;
+	--superlichtblauw:#EDF8FB;
+	--donkerblauw:#001e80;
+	--footerEerste:#c4e7f3;
+	--footerTweede:#2a5729;
+    --geel: #ffbc0e;
+	--textdonkerblauw: #002f87;
+}
+
+
+
+/* CSS REMEDY */
+*, *::after, *::before {
+    box-sizing:border-box;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'chunk rethunk';
+    padding: 0.7em;
+}
+
+p {
+	font-family: 'proxima nova';
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	min-height:4em;
+	padding:0 1em;
+	line-height:1;
+	
+	/* JOUW CODE HIER - stap 3 */  
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	/* JOUW CODE HIER - stap 3 */
+	position:sticky;
+	top:0;
+    z-index: 1000;
+    transition: transform 0.4s ease;
+    background-color: var(--wit);
+}
+
+header.verberg {
+    transform: translateY(-100%);
+}
+/* chatgpt voor bovenstaand stukje voor inklappen header */
+
+
+/* shoutout naar Randi voor helpen bij mijn header en navigatie */
+
+header > a {
+  padding:.5em 0;
+}
+
+
+
+/********/
+/* LOGO */
+/********/
+header > a:first-of-type {
+  	z-index:1000;
+}
+/* om het logo te laten staan bij uitklappen */
+
+header > a:first-of-type img {
+  	height:3em;
+}
+
+/* link icon */
+header > a:last-of-type img {
+  width:auto;
+  height:2em;
+}
+
+
+
+/***************/
+/* MENU BUTTON */
+/***************/
+nav button {
+	padding:.5em;
+	
+
+	/* standaard styling aanpassen */
+	appearance:none;
+	background-color:var(--button-background);
+	border:none;
+	border-radius:.25em; 
+	font:inherit;
+	text-align:center;
+	color:var(--button-color);
+  
+  /* JOUW CODE HIER - stap 5 */
+  position:relative;
+  z-index:100000;
+}
+
+nav button img {
+  height:1em;
+}
+
+/* als menu open is */
+nav.toonMenu button img {
+  /* JOUW CODE HIER - stap 5 */
+  /* url kruisje: https://assets.codepen.io/274456/ui-icon-cross.svg */
+  content:url("../images/close-svgrepo-com.svg")
+
+  
+}
+
+
+
+
+
+/*******************/
+/* LIJST MET LINKS */
+/*******************/
+nav ul { 
+	height:0;
+  margin:0; 
+  padding:0em 1em;
+  list-style:none;
+
+  overflow: hidden;
+  
+  display:flex;
+  flex-direction: column;
+  gap:2em;
+  align-content:start;
+  
+  background:var(--wit);
+
+  /* background-color: #f006; */
+  
+  
+  /* JOUW CODE HIER - stap 1 */
+  position:fixed;
+/*   top:0;
+  bottom:0;
+  left:0;
+  right:0; */
+  
+  /* inset:0; */
+  top:4em;
+  left:0;
+  right:0;
+  
+  /* JOUW CODE HIER - stap 2 */
+/* translate: 0 -100%; */
+/* met chatgpt gevraagd hoe ik het horizontaal uit laat klappen */
+/*   translate: -0 60%;
+ */ 
+
+  
+  /* JOUW CODE HIER - stap 4 */
+transition: 1s;
+  
+}
+
+/* als menu open is */
+nav.toonMenu ul {
+  /* JOUW CODE HIER - stap 4 */
+/* translate:0 0%; */
+	/* padding: */
+
+	padding:1em 1em;
+	height:calc( 100dvh - 4em );
+  
+}
+
+
+
+/************************/
+/* EEN LINK IN DE LIJST */
+/************************/
+nav a {
+  /* icon en tekst met gap-je naast elkaar */
+  align-items:center;
+  
+}
+
+header nav a {
+	font-family: 'chunk rethunk';
+	padding: 1em;
+	color: var(--textkleur);
+	text-decoration: none;
+}
+
+header nav a:hover {
+	text-decoration: underline;
+	color: var(--textdonkerblauw);
+}
+
+nav a img {
+  width:auto;
+  height:2em;
+}
+
+nav a.active {
+  font-weight:bold;
+}
+
+
+
+
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 38em breed is */
+/****************************************************************/
+@media (min-width:38em) {
+  nav {
+    /* JOUW CODE HIER - stap 8 */
+order:0;
+    
+  }
+  
+  nav button {
+    /* JOUW CODE HIER - stap 6 */
+display:none;
+    
+  }
+  
+  nav ul {
+    /* JOUW CODE HIER - stap 7 */
+	position:static;
+    translate:none;
+    background: none;
+    padding:2em;
+	flex-direction: row;
+	
+  }
+  
+  nav li {
+    /* JOUW CODE HIER - stap 9 */
+    flex-basis:0;
+    flex-grow:0;
+
+    
+  }
+  
+  nav a {
+    /* JOUW CODE HIER - stap 10 */
+ flex-direction:column;
+    border: none;
+    
+  }
+  
+  header > a:last-of-type {
+    /* JOUW CODE HIER - stap 10 */
+flex-direction:column;
+    
+  }
+}
+
+
+
+
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 57em breed is */
+/****************************************************************/
+@media (min-width:54em) {
+  header > a:last-of-type,
+  nav a {
+    /* JOUW CODE HIER - stap 11 */
+    flex-direction:row;
+    
+    
+  }
+}
+
+/* header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	translate: -100%;
+	transition: 2s;
+	background-color: var(--wit);
+}
+
+nav.is-open {
+	translate: 0%;
+} */
+
+/* @media (min-width:38em) {
+  	header > button {
+    display: none;
+	}
+  }
+  
+nav {
+	position: static;
+	translate: 0%;
+	background: none;
+}
+  
+nav button {
+	display: none;
+}
+
+nav ul {
+	display: flex;
+	gap: 1em;
+}
+  
+nav a {
+	border: none;
+	flex-direction: column;
+    
+}
+  
+header > a:last-of-type {
+	flex-direction: column;
+    
+} */
+
+/* header img {
+	width: 10em;
+} */
+
+
+
+
+/* FOOTER */
+footer {
+    background: var(--footerEerste);
+}

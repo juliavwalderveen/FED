@@ -148,10 +148,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Interessante info over filmpje en autoplay etc. Ook over hovers met de aparte images.
   spans toegestaan, wel arialabel toevoegen voor screenreader, zodat screenreader specifieker opnoemt wat je kan kopen.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
 
 </details>
 
@@ -179,17 +175,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  header is af, ben nog bezig met het begrijpen van alle code maar de grote lijn is duidelijk, css is op de footer na al best ver
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | ik               | student 2          | student 3    | student 4        |
+  | plaatje links    | ---                | ---          | ---              |
+  | vd tekst zetten  | en dit             | en ik dit    | en dan ik dat    |
+  | en dat ook nog   | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | ...                | ...                | ...          | ...              |
 
 
   ### Verslag van meeting

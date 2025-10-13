@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="nl">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Julia">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Howdy FED2526</title>
+	
+	<link href="style/smakenStyle.css" rel="stylesheet">
+	<link href="style/main.css" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<script defer src="scripts.js"></script>
+
+</head>
+
+<header>
+  <a href="https://www.benjerry.nl/"> <img src="images/logo.avif" alt="logo Ben & Jerry, ga naar home"> </a>
+  <nav>
+    <!-- de button is niet relevant voor screenreaders -->
+    <button aria-hidden="true">
+      <img src="images/burger-menu-svgrepo-com.svg" alt="hamburger menu" />
+    </button>
+	<!-- <form action="search"><input type="search"></form> -->
+	<!-- vragen aan docent -->
+    <ul>
+      <li><a class="active" href="#">Smaken</a></li>
+      <li><a href="#">Verkooppunten</a></li>
+      <li><a href="#">Activisme</a></li>
+      <li><a href="#">Over Ben & Jerry’s</a></li>
+      <li><a href="#">Nieuwtjes</a></li>
+	  <li><a href="#">Neem contact met ons op</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+	<main>
+		<!-- hero sectie -->
+		<section>
+			<h1>Smaken</h1>
+			<p>Wij hebben voor iedereen wel een favoriete Ben & Jerry’s smaak. Van onze klassieker Cookie Dough, onze vegan varianten en nog veel meer fairrukkelijke smaken vol met Chunks en Swirls! Ontdek ze allemaal. Grab a spoon! Heerlijk voor op de bank, als dessert of onderweg.</p>
+			<img src="images/heroIJS.avif" alt="Ben en Jerrys ijs">
+			<img src="images/wolken.avif" alt="wolken">
+			<!-- hoe zet ik dit goed als alt? -->
+		</section>
+		<!-- zoeken & filteren + items -->
+		<section>
+			<!-- nog aanpassen -->
+			<h2>Productoverzicht</h2> 
+			<!-- hidden -->
+			<form>
+				<fieldset>
+					<input type="search" id="zoek" name="zoeken" placeholder="Search All Our Flavors">
+					<select id="category" name="category" required>
+    				<option value="" disabled selected hidden>Browse By Category</option>
+					<option value="IJs pints">IJs pints</option>
+					<option value="Sundaes">Sundaes</option>
+					<option value="Ice cream bites">Ice cream buttons</option>
+					</select>
+				</fieldset>
+			</form>
+			<div>
+				<h3>IJs pints</h3>
+				<a href="https://www.benjerry.nl/smaken/pints">Alles bekijken</a>
+			</div>
+			<!-- container voor artikelen -->
+			<ul>
+				<li>
+					<a href="https://www.benjerry.nl/smaken/brookieees-and-cream-origineel-ijs/pint"><span aria-label="koop nu brookieees & cream">Nu kopen</span>
+					<!-- a eromheen zetten -->
+						<h4>Brookieees & Cream</h4>
+						<img src="images/Brookies-and-Cream.avif" alt="foto van Brookies & cream ijs, Vanilla Ice cream with brownie style cookie dough, golden cookie swirls & white chunks">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.benjerry.nl/smaken/caramel-chew-chew-origineel-ijs/pint"><span aria-label="koop nu caramel chew chew">Nu kopen</span>
+						<h4>Caramel Chew Chew</h4>
+						<img src="images/CaramelChewChew.avif" alt="foto van Caramel chew chew ijs, caramel ice cream with a caramel swirl & chocolatey covered caramel chunks">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.benjerry.nl/smaken/chocolate-fudge-brownie-origineel-ijs/pint"><span aria-label="koop nu chocolate fudge brownie">Nu kopen</span>
+						<h4>Chocolate Fudge Brownie</h4>
+						<img src="images/ChocolateFudgeBrownie.avif" alt="foto van Chocolate Fudge Brownie, chocolate ice cream with brownie pieces">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.benjerry.nl/smaken/chocolate-fudge-brownie-origineel-ijs/pint"><span aria-label="koop nu chocolatey love a-fair">Nu kopen</span>
+						<h4>Chocolatey Love A-fair</h4>
+						<img src="images/Chocolatey-Love-A-Fair.png" alt="foto van Chocolatey Love A-fair, chocolate ice cream with salted caramel swirls, caramel chunks & sea salt chocolatey chunks, samenwerking met Tony Chocolonely">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.benjerry.nl/smaken/chocolate-fudge-brownie-origineel-ijs/pint"><span aria-label="koop chunky monkey">Nu kopen</span>
+						<!-- arialabel  -->
+						<h4>Chunky Monkey</h4>
+						<img src="images/chunkyMonkey.avif" alt="foto van chunky monkey, banana ice cream with chocolatey bananas and walnuts">
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>video</h2>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/PDHjQBQ-GDg?si=9JlMBatcmqZqzLZ7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<!-- bron: https://www.w3schools.com/html/html_youtube.asp -->
+			<!-- werkt nog niet -->
+		</section>
+		<footer>
+			<section>
+				<h2>Wij maken dolgraag ijs, maar ons werk krijgt pas echt betekenis wanneer wij ons inzetten om de wereld mooier te maken.</h2>
+				<ul>
+					<li>
+						<h3>Zorgvuldig uitgekozen ingrediënten</h3>
+						<img src="images/plaatje1.png" alt="" aria-hidden="true">
+						<p>Onze ingrediënten dragen bij aan positieve verandering en zorgen ervoor dat ons ijs sensationeel smaakt</p>
+						<a href="#">productaankoop</a>
+					</li>
+					<li>
+						<h3>Gedeeld succes</h3>
+						<img src="images/plaatje2.png" alt="" aria-hidden="true">
+						<p>Ons doel is welvaart te creëren voor iedereen die verbonden is met ons bedrijf</p>
+						<a href="#">Onze missie en waarden</a>
+					</li>
+					<li>
+						<h3>Een verschil maken</h3>
+						<img src="images/plaatje3.png" alt="" aria-hidden="true">
+						<p>Wij spreken ons uit over onderwerpen die ons nauw aan het hart liggen</p>
+						<a href="#">Onderwerpen die wij belangrijk vinden</a>
+					</li>
+				</ul>
+			</section>
+			<img src="images/woody.svg" alt="plaatje van een koe met luidspreker vast">
+			<section>
+				<h2>Over ons</h2>
+				<!-- hidden -->
+				<h3>Meld je aan voor onze nieuwsbrief</h3>
+				<p>Wij zorgen ervoor dat je als eerste op de hoogte bent van onze nieuwe smaken, fun activiteiten en sociale initiatieven van Ben & Jerry's! Get the scoop!</p>
+				<form>
+					<label for="email">Voer je e-mailadres in</label>
+					<input type="email" id="email" name="email">
+				</form>
+				<!-- bron: https://www.w3schools.com/html/html_form_input_types.asp -->
+				<h3>Blijf op de hoogte</h3>
+				<ul>
+					<li>
+						<button type="button" onclick="l">Stuur ons feedback</button>
+					</li>
+					<li>
+						<a href="#">Unsubscribe</a>
+					</li>
+					<!-- onclick aanvullen -->
+					<!-- Ik heb Claude AI gevraagd of een button of a beter is, die gaf aan dat de eerste duidelijk een actie is en dus een button, terwijl bij de tweede je verwacht bij een uitschrijflink te komen, hier heb ik dus een a van gemaakt  -->
+				</ul>
+				<h3>Volg ons!</h3>
+				<!-- icons -->
+				<h3>Meer informatie</h3>
+				<ul>
+					<li>
+						<a href="#">Nieuws</a>
+					</li>
+					<li
+						><a href="#">Over ons</a>
+					</li>
+					<li>
+						<a href="#">Hoe wij zaken doen</a>
+					</li>
+				</ul>
+				<h3>Overige informatie</h3>
+				<!-- hidden -->
+				<ul>
+					<li>
+						<a href="#">Toegankelijkheid</a>
+					</li>
+					<li>
+						<button type="button" onclick="l">Neem contact met ons op</button>
+						<!-- onclick nog aanpassen -->
+						<!-- beter geen onclick -->
+					</li>
+					<li>
+						<a href="#">Cookieverklaring</a>
+					</li>
+					<li>
+						<a href="#">Privacyverklaring</a>
+					</li>
+					<li>
+						<a href="#">Gebruikersvoorwaarden</a>
+					</li>
+					<li>
+						<a href="#">Sitemap</a>
+					</li>
+				</ul>
+				<!-- Moeten deze allemaal uitgewerkt? -->
+			</section>
+		</footer>
+	</main>
+</body>
+	
+</html>
