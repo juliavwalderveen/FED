@@ -115,6 +115,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - a voor het hele artikel
   - Youtube filmpje nog fixen
   - html is goed
+  - button beter geen onclick
   
 
 </details>
@@ -129,21 +130,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  begonnen met css, so far so good. Wel lastig om weer op te halen maar het gaat prima
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Noa             | Melissa         | ik   | Randi        |
-  | img 1e sectie.  | ---                | Mag mn span.    | ---              |
-  | 3e sectie tekst | en dit             | Youtube filmpje | en dan ik dat    |
-  | scrollend.      | dit als er tijd is | werkt niet.  |
-  | ...             | ...                | ...          | ...              |
+  | Noa             | Melissa        | ik              | Randi         |
+  | img 1e sectie.  | caroussel met  | Mag mn span?    | ---           |
+  | 3e sectie tekst | 3 plaatjes met | Youtube filmpje | en dan ik dat |
+  | scrollend.      | grid           | werkt niet.     |               | 
+  | ...             | ...            | ...             | ...           |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  mijn youtube filmpje is gefixt, simpeler dan ik dacht.
+  Interessante info over filmpje en autoplay etc. Ook over hovers met de aparte images.
+  spans toegestaan, wel arialabel toevoegen voor screenreader, zodat screenreader specifieker opnoemt wat je kan kopen.
 
   - punt 1
   - punt 2

@@ -10,39 +10,30 @@
 	
 	<link href="style/smakenStyle.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-	<script defer src="scripts/script.js"></script>
+	<script defer src="scripts.js"></script>
 
 </head>
 
 <header>
-	 <a href="https://www.benjerry.nl/">
-		<img src="images/logo.avif" alt="logo Ben & Jerry">
-	 </a>
-	 <button aria-hidden="true"><img src="images/Hamburger_icon.svg.png" alt="" />Menu</button>
-	 <nav>
-		<button aria-hidden="true"><img src="images/Hamburger_icon.svg.png" alt="" />Sluit</button>
-		<ul>
-			<li>
-				<a class="active"><img src="https://assets.codepen.io/274456/ft-icon-castle.svg" alt="home"> Home</a>
-			</li>
-			<li>
-				<a href="#"><img src="https://assets.codepen.io/274456/ft-icon-knight.svg" alt="knight"> Knight</a>
-			</li>
-			<li>
-				<a href="#"><img src="https://assets.codepen.io/274456/ft-icon-ogre.svg" alt="ogre"> Ogre</a>
-			</li>
-			<li>
-				<a href="#"><img src="https://assets.codepen.io/274456/ft-icon-queen.svg" alt="queen"> Queen</a>
-			</li>
-			<li>
-				<a href="#"><img src="https://assets.codepen.io/274456/ft-icon-witch.svg" alt="witch"> Witch</a>
-			</li>
-			<li>
-				<a href="#"><img src="https://assets.codepen.io/274456/ft-icon-wizard.svg" alt="wizard"> Wizard</a>
-			</li>
-			</ul>
-	 </nav>
+  <a href="https://www.benjerry.nl/"> <img src="images/logo.avif" alt="logo Ben & Jerry, ga naar home"> </a>
+  <nav>
+    <!-- de button is niet relevant voor screenreaders -->
+    <button aria-hidden="true">
+      <img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="hamburger menu" />Menu
+    </button>
+	<!-- <form action="search"><input type="search"></form> -->
+	<!-- vragen aan docent -->
+    <ul>
+      <li><a class="active" href="#">Smaken</a></li>
+      <li><a href="#">Verkooppunten</a></li>
+      <li><a href="#">Activisme</a></li>
+      <li><a href="#">Over Ben & Jerry’s</a></li>
+      <li><a href="#">Nieuwtjes</a></li>
+	  <li><a href="#">Neem contact met ons op</a></li>
+    </ul>
+  </nav>
 </header>
+
 <body>
 	<main>
 		<!-- hero sectie -->
@@ -50,6 +41,7 @@
 			<h1>Smaken</h1>
 			<p>Wij hebben voor iedereen wel een favoriete Ben & Jerry’s smaak. Van onze klassieker Cookie Dough, onze vegan varianten en nog veel meer fairrukkelijke smaken vol met Chunks en Swirls! Ontdek ze allemaal. Grab a spoon! Heerlijk voor op de bank, als dessert of onderweg.</p>
 			<img src="images/heroIJS.avif" alt="Ben en Jerrys ijs">
+			<!-- hoe zet ik dit goed als alt? -->
 		</section>
 		<!-- zoeken & filteren + items -->
 		<section>
@@ -74,32 +66,33 @@
 			<!-- container voor artikelen -->
 			<ul>
 				<li>
-					<a href="https://www.benjerry.nl/smaken/brookieees-and-cream-origineel-ijs/pint"><span>Nu kopen</span>
+					<a href="https://www.benjerry.nl/smaken/brookieees-and-cream-origineel-ijs/pint"><span aria-label="koop nu brookieees & cream">Nu kopen</span>
 					<!-- a eromheen zetten -->
 						<h4>Brookieees & Cream</h4>
-						<img src="images/Brookies-and-Cream.avif" alt="foto van Brookies & cream ijs, Vanilla Ice cream with brownie style cookie dough, golden cookie swirls & white chunks"></a>
+						<img src="images/Brookies-and-Cream.avif" alt="foto van Brookies & cream ijs, Vanilla Ice cream with brownie style cookie dough, golden cookie swirls & white chunks">
 					</a>
 				</li>
 				<li>
-					<a href="https://www.benjerry.nl/smaken/caramel-chew-chew-origineel-ijs/pint"><span>Nu kopen</span>
+					<a href="https://www.benjerry.nl/smaken/caramel-chew-chew-origineel-ijs/pint"><span aria-label="koop nu caramel chew chew">Nu kopen</span>
 						<h4>Caramel Chew Chew</h4>
 						<img src="images/CaramelChewChew.avif" alt="foto van Caramel chew chew ijs, caramel ice cream with a caramel swirl & chocolatey covered caramel chunks">
 					</a>
 				</li>
 				<li>
-					<a href="https://www.benjerry.nl/smaken/chocolate-fudge-brownie-origineel-ijs/pint"><span>Nu kopen</span>
+					<a href="https://www.benjerry.nl/smaken/chocolate-fudge-brownie-origineel-ijs/pint"><span aria-label="koop nu chocolate fudge brownie">Nu kopen</span>
 						<h4>Chocolate Fudge Brownie</h4>
 						<img src="images/ChocolateFudgeBrownie.avif" alt="foto van Chocolate Fudge Brownie, chocolate ice cream with brownie pieces">
 					</a>
 				</li>
 				<li>
-					<a href="https://www.benjerry.nl/smaken/chocolate-fudge-brownie-origineel-ijs/pint"><span>Nu kopen</span>
+					<a href="https://www.benjerry.nl/smaken/chocolate-fudge-brownie-origineel-ijs/pint"><span aria-label="koop nu chocolatey love a-fair">Nu kopen</span>
 						<h4>Chocolatey Love A-fair</h4>
 						<img src="images/Chocolatey-Love-A-Fair.png" alt="foto van Chocolatey Love A-fair, chocolate ice cream with salted caramel swirls, caramel chunks & sea salt chocolatey chunks, samenwerking met Tony Chocolonely">
 					</a>
 				</li>
 				<li>
-					<a href="https://www.benjerry.nl/smaken/chocolate-fudge-brownie-origineel-ijs/pint"><span>Nu kopen</span>
+					<a href="https://www.benjerry.nl/smaken/chocolate-fudge-brownie-origineel-ijs/pint"><span aria-label="koop chunky monkey">Nu kopen</span>
+						<!-- arialabel  -->
 						<h4>Chunky Monkey</h4>
 						<img src="images/chunkyMonkey.avif" alt="foto van chunky monkey, banana ice cream with chocolatey bananas and walnuts">
 					</a>
@@ -108,9 +101,7 @@
 		</section>
 		<section>
 			<h2>video</h2>
-			<iframe width="420" height="315"
-			src="https://youtu.be/PDHjQBQ-GDg?si=LsA2gTYKjMM4ln4Y">
-			</iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/PDHjQBQ-GDg?si=9JlMBatcmqZqzLZ7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			<!-- bron: https://www.w3schools.com/html/html_youtube.asp -->
 			<!-- werkt nog niet -->
 		</section>
@@ -149,7 +140,7 @@
 				<h3>Blijf op de hoogte</h3>
 				<ul>
 					<li>
-						<button type="button" onclick="#">Stuur ons feedback</button>
+						<button type="button" onclick="l">Stuur ons feedback</button>
 					</li>
 					<li>
 						<a href="#">Unsubscribe</a>
@@ -178,7 +169,7 @@
 						<a href="#">Toegankelijkheid</a>
 					</li>
 					<li>
-						<button type="button" onclick="#">Neem contact met ons op</button>
+						<button type="button" onclick="l">Neem contact met ons op</button>
 						<!-- onclick nog aanpassen -->
 						<!-- beter geen onclick -->
 					</li>
