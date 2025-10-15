@@ -356,6 +356,67 @@ header > a:last-of-type {
 
 
 /* FOOTER */
-footer {
-    background: var(--footerEerste);
+footer h2 {
+    padding: 1.5em 1em 1.5em 1em;
 }
+footer section:nth-of-type(1) {
+    background: var(--footerEerste);
+    padding-bottom: 12em;
+    position: relative;
+}
+
+footer section:first-of-type > img {
+    position: absolute;
+    bottom: -2rem;
+    right: 3rem;
+    width: 37%;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+/* bron: https://www.a11yproject.com/posts/how-to-hide-content/ */
+
+footer section:nth-of-type(1) ul li {
+    display: grid;
+    grid-template-columns:5em 1fr ;
+    grid-template-rows: min-content min-content min-content;
+    font-size: 12px;
+    padding-bottom: 1em;;
+    padding-left: 0;
+}
+
+footer section:nth-of-type(1) ul li img {
+    grid-column: 1;
+    grid-row: 1/-1;
+    width: 10em;
+    padding: 0.5em 0.5em 0 0;
+}
+
+footer section:nth-of-type(1) ul li h3 {
+    grid-column: 2;
+}
+
+footer section:nth-of-type(1) ul li a {
+    grid-row: 3;
+    grid-column: 2;
+    padding: 0.7em 0 1em 0.7em;
+    font-family: 'proxima nova';
+}
+ /* bij deze grid hebben de studentassistenten mij geholpen tijdens voortgangsgesprek */
+
+footer section:nth-of-type(2) {
+    background: var(--footerTweede);
+    padding-top: 3em;
+    color: var(--wit)
+}
+
+/* footer section:nth-of-type(2) a {
+    text-decoration: none;
+} */

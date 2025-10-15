@@ -67,11 +67,9 @@ select {
 	border-radius: 0.75em;
 	border: solid 2px grey;
 	appearance: none;
-}
-
-option:first-of-type {
 	font-family: 'chunk rethunk';
 }
+/* hover nog doen */
 
 /* styling producten */
 main > section:nth-of-type(2) span{
@@ -87,6 +85,7 @@ main > section:nth-of-type(2) span{
 }
 /* met behulp van Noa <3 */
 
+/* hover op deze hierboven */
 main > section:nth-of-type(2) a{
 	font-family: 'proxima nova';
 	color: var(--textkleur);
@@ -127,6 +126,11 @@ main > section:nth-of-type(2) a span {
 }
 
 /* youtube video */
+main > section:nth-of-type(3) {
+	display: flex;
+	justify-content: center;
+}
 main > section:nth-of-type(3) iframe{
 	width: 90%;
+	padding: 1.5em;
 }

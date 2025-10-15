@@ -181,11 +181,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | ik               | student 2          | student 3    | student 4        |
-  | plaatje links    | ---                | ---          | ---              |
-  | vd tekst zetten  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog   | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...                | ...                | ...          | ...              |
+  | ik               | Melissa           | Randi          | student 4        |
+  | plaatje links    | caroussel         | html goed      | ---              |
+  | vd tekst zetten  | button states     | ingesprongen   | en dan ik dat    |
+  | lettertype in    | video, hero image | hero sectie    | dit wil ik zeker |
+  | select           | add cart          | ...            | ...              |
 
 
   ### Verslag van meeting
