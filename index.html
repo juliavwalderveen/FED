@@ -5,12 +5,165 @@
 	<meta name="author" content="Julia">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Howdy FED2526</title>
+	<title>Home</title>
 	
-	<link href="styles/style.css" rel="stylesheet">
+	<link href="style/homeStyle.css" rel="stylesheet">
+	<link href="style/main.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
-    
+	<header>
+		<a href="https://www.benjerry.nl/"> <img src="images/logo.avif" alt="logo Ben & Jerry, ga naar home"> </a>
+		<nav>
+			<!-- de button is niet relevant voor screenreaders -->
+			<button aria-hidden="true">
+			<img src="images/burger-menu-svgrepo-com.svg" alt="hamburger menu" />
+			</button>
+			<!-- <form action="search"><input type="search"></form> -->
+			<!-- vragen aan docent -->
+			<ul>
+			<li><a class="active" href="#">Smaken</a></li>
+			<li><a href="#">Verkooppunten</a></li>
+			<li><a href="#">Activisme</a></li>
+			<li><a href="#">Over Ben & Jerry’s</a></li>
+			<li><a href="#">Nieuwtjes</a></li>
+			<li><a href="#">Neem contact met ons op</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h1>Bohemian Raspberry</h1>
+			<p>Laat je smaakpupillen rocken met de terugkeer van de zoete eerbetoon aan muziekroyalty Queen, ter gelegenheid van de 50e verjaardag van hun legendarische nummer "Bohemian Rhapsody".</p>
+			<img src="images/HeroHome.webp" alt="herofoto van Bohemian Raspberry ijs">
+			<a href="#">Lees meer</a>
+		</section>
+		<section>
+			<h2>Verkooppunten</h2>
+			<img src="images/card_buy_ice_cream_1080x720.avif" alt="Ben&Jerry's ijs">
+			<!-- geen alt nodig? -->
+			<h3>Verkooppunten</h3>
+			<!-- dubbelop, zijn ze allebei nodig? -->
+			 <p>Vind jouw dichtstbijzijnde supermarkt of laat Ben & Jerry's bezorgen door een restaurant of bezorg partner.</p>
+			 <a href="#">Vind nu!</a>
+		</section>
+		<section>
+			<h2>Doe mee</h2>
+			<img src="images/Wereld.webp" alt="decoratieve afbeelding van het letterlijk ondersteunen van de wereldbol.">
+			<p>Wij spreken ons uit over onderwerpen die ons nauw aan het hart liggen. Ontdek hoe jij kan helpen.</p>
+			<a href="#">Ontdek meer over onze waarden</a>
+		</section>
+		<section>
+			<h2>Topverhalen</h2>
+			<ul>
+				<li>
+					<h3>QUIZ: Celebrate Our Birthday With 10 Trivia Questions</h3>
+					<img src="images/birthday.jpg" alt="Ben & Jerry's in verjaardagsthema met kaarsjes en ballonnen">
+					<!-- datum? -->
+					<p>Break out the balloons, it’s our birthday! Here’s a birthday challenge for you: Can you answer 10 trivia questions about your favorite ice cream makers? Give it a go!</p>
+					<a href="#">Meer lezen</a>
+				</li>
+				<li>
+					<h3>Iemand helpen is toch geen misdrijf? Bescherm solidariteit in Europa!</h3>
+					<img src="images/solidariteit.jpg" alt="Ben & Jerry's solidariteit"> 
+					<!-- Betere alt? -->
+					<!-- datum? -->
+					 <p>Europese politici willen hulp aan nieuwkomers bestraffen. Kom in actie!</p>
+					<a href="#">Meer lezen</a>
+				</li>
+				<li>
+					<h3>Ice Cream Flower-wiches</h3>
+					<img src="images/Flower.jpg" alt="Ben & Jerry's ijs met bloemen"> 
+					<!-- Betere alt? -->
+					<!-- datum? -->
+					<p>Spring is in the air! Celebrate the season with these customizable Ice Cream Flower-wiches, perfect for making and decorating with friends!</p>
+					<a href="#">Meer lezen</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+    <footer>
+	<section>
+		<h2>Wij maken dolgraag ijs, maar ons werk krijgt pas echt betekenis wanneer wij ons inzetten om de wereld mooier te maken.</h2>
+			<ul>
+				<li>
+					<h3>Zorgvuldig uitgekozen ingrediënten</h3>
+					<img src="images/plaatje1.png" alt="" aria-hidden="true">
+					<p>Onze ingrediënten dragen bij aan positieve verandering en zorgen ervoor dat ons ijs sensationeel smaakt</p>
+					<a href="#">Productinkoop</a>
+				</li>
+				<li>
+					<h3>Gedeeld succes</h3>
+					<img src="images/plaatje2.png" alt="" aria-hidden="true">
+					<p>Ons doel is welvaart te creëren voor iedereen die verbonden is met ons bedrijf</p>
+					<a href="#">Onze missie en waarden</a>
+				</li>
+				<li>
+					<h3>Een verschil maken</h3>
+					<img src="images/plaatje3.png" alt="" aria-hidden="true">
+					<p>Wij spreken ons uit over onderwerpen die ons nauw aan het hart liggen</p>
+					<a href="#">Onderwerpen die wij belangrijk vinden</a>
+				</li>
+			</ul>
+			<img src="images/woody.svg" alt="plaatje van een koe met luidspreker vast">
+		</section>
+		<section>
+			<h2 class="visually-hidden">Over ons</h2>
+			<!-- hidden -->
+			<h3>Meld je aan voor onze nieuwsbrief</h3>
+			<p>Wij zorgen ervoor dat je als eerste op de hoogte bent van onze nieuwe smaken, fun activiteiten en sociale initiatieven van Ben & Jerry's! Get the scoop!</p>
+			<form>
+				<label for="email">Voer je e-mailadres in</label>
+				<input type="email" id="email" name="email">
+			</form>
+			<!-- bron: https://www.w3schools.com/html/html_form_input_types.asp -->
+			<h3>Blijf op de hoogte</h3>
+			<ul>
+				<li>
+					<a href="#">Stuur ons feedback</a>
+				</li>
+				<li>
+					<a href="#">Unsubscribe</a>
+				</li>
+			</ul>
+			<h3>Volg ons!</h3>
+			<!-- icons -->
+			<h3>Meer informatie</h3>
+			<ul>
+				<li>
+					<a href="#">Nieuws</a>
+				</li>
+				<li
+					><a href="#">Over ons</a>
+				</li>
+				<li>
+					<a href="#">Hoe wij zaken doen</a>
+				</li>
+			</ul>
+			<h3>Overige informatie</h3>
+			<!-- hidden -->
+			<ul>
+				<li>
+					<a href="#">Toegankelijkheid</a>
+				</li>
+				<li>
+					<a href="#">Neem contact met ons op</a>
+				</li>
+				<li>
+					<a href="#">Cookieverklaring</a>
+				</li>
+				<li>
+					<a href="#">Privacyverklaring</a>
+				</li>
+				<li>
+					<a href="#">Gebruikersvoorwaarden</a>
+				</li>
+				<li>
+					<a href="#">Sitemap</a>
+				</li>
+			</ul>
+			<!-- Moeten deze allemaal uitgewerkt? -->
+		</section>
+	</footer>
 </body>
 </html>

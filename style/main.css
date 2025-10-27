@@ -20,21 +20,20 @@
 	--donkerblauw:#001e80;
 	--footerEerste:#c4e7f3;
 	--footerTweede:#2a5729;
-    --geel: #ffbc0e;
+  --geel: #ffbc0e;
 	--textdonkerblauw: #002f87;
+  --achtergronddonkerblauw: #1D1459;
 }
 
+h1, h2, h3, h4 {
+  	font-family: 'chunk rethunk';
 
+}
 
 /* CSS REMEDY */
 *, *::after, *::before {
     box-sizing:border-box;
     margin: 0;
-}
-
-h1, h2, h3, h4 {
-	font-family: 'chunk rethunk';
-    padding: 0.7em;
 }
 
 p {
@@ -92,7 +91,8 @@ header > a:first-of-type img {
 /* link icon */
 header > a:last-of-type img {
   width:auto;
-  height:2em;
+  height:3.7em;
+  padding: 0.5em
 }
 
 
@@ -119,7 +119,7 @@ nav button {
 }
 
 nav button img {
-  height:1em;
+  height:1.5em;
 }
 
 /* als menu open is */
@@ -417,6 +417,76 @@ footer section:nth-of-type(2) {
     color: var(--wit)
 }
 
-/* footer section:nth-of-type(2) a {
+footer section:nth-of-type(2) {
+  padding: 1em;
+}
+
+footer section:nth-of-type(2) form {
+  display: flex
+}
+
+footer section:nth-of-type(2) input {
+  padding: 1em;
+	border-radius: .8em 0 0 .8em;
+  border: none;
+  width: 100%;
+}
+
+footer section:nth-of-type(2) button {
+  background-color: var(--geel);
+  border: none;
+  padding: 1em;
+  border-radius: 0 .8em .8em 0;
+  transition: color .15s 
+        ease-in-out, background-color .15s 
+        ease-in-out, border-color .15s 
+        ease-in-out, box-shadow .15s 
+        ease-in-out; 
+}
+
+footer section:nth-of-type(2) button:hover {
+    background-color: #fae673;
+
+}
+
+/* alles links uitlijnen, standaard padding ul weghalen */
+footer section:nth-of-type(2) ul {
+  padding: 0;
+}
+
+/* li items stijlen */
+footer section:nth-of-type(2) ul li {
+  list-style: none;
+  padding: .3em
+}
+
+footer section:nth-of-type(2) ul li a {
     text-decoration: none;
-} */
+    color: var(--wit);
+    font-family: 'proxima nova';
+    font-size: 0.8em;
+}
+
+footer section:nth-of-type(2) h3 {
+  font-size: .8em;
+  margin-top: 2em;
+}
+
+footer section:nth-of-type(2) p {
+  font-size: .8em;
+}
+
+/* socials stijlen */
+footer section:nth-of-type(2) ul:nth-of-type(2){
+  display: flex;
+  gap: .3em;
+}
+
+footer section:nth-of-type(2) img {
+  width: 2.5em;
+}
+
+/* hoe ga ik de spacing doen bij footer , margin-top */
+/* moet ik die talen instellen ook doen, alleen select, label visually hidden*/
+/* search bar vakje */
+/* a's op homepagina */
