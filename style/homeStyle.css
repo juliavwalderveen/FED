@@ -2,16 +2,16 @@ body {
     padding-inline: 1em;
 }
 
-/* main section h1, main section h2, main section h3, main section p {
+/* /* main section h1, main section h2, main section h3, main section p {
     padding: 1rem;
 } */
 /* nog fixen */
 main section img {
-    /* display: block;
+    display: block;
     margin-inline: -1em;
-    width: 100dvw; */
-    /* position: relative;
-    width: 100vw; */
+    /* width: 100dvw; */ */
+    position:relative;
+    width: 100vw;
 }
 
 main {
