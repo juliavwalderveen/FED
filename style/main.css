@@ -348,12 +348,8 @@ nav a.active {
   header > a:last-of-type {
     flex-direction:column;
   }
-
-  /* Hide contact link only on desktop */
-  nav ul li:last-child {
-    display:none;
-  }
 }
+ 
 
 
 /****************************************************************/
@@ -567,50 +563,132 @@ footer p, li {
   padding: 0.7em 0 0.7em 0;
 }
 
+/* zodat deze afstand heeft van de rest */
 footer section:nth-of-type(2) ul:nth-of-type(4) {
   padding: 2em 0 2em 0 ;
 }
 
 
-/* small screens: bestaande styling blijft zoals die is */
-
-/* vanaf 38em: 3 items naast elkaar */
+/* vanaf 38em*/
 @media (min-width: 38em) {
-    footer section:nth-of-type(1) ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        padding: 1.5em;
-    }
+  /* zet list items naast elkaar ipv onder elkaar */
+  footer section:nth-of-type(1) ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      padding: 1.5em;
+  }
 
-    footer section:nth-of-type(1) p {
-      position: static !important;
-      color: var(--textkleur) !important;
-    }
-    /* chatgpt als bron voor !important, anders werkte het niet omdat ik eerder position:absolute heb gebruikt en het anders niet werkte */
 
-    footer section:nth-of-type(1) ul li {
-        display: flex;         
-        flex-direction: column; 
-        font-size: 14px;
-        padding-bottom: 0;
-    }
+  footer section:nth-of-type(1) ul li {
+      display: flex;         
+      flex-direction: column; 
+      font-size: 14px;
+      padding-bottom: 0;
+  }
 
-    footer section:nth-of-type(1) ul li img,
-    footer section:nth-of-type(1) ul li h3,
-    footer section:nth-of-type(1) ul li p,
-    footer section:nth-of-type(1) ul li a {
-        grid-column: unset;     /* verwijder oude grid instellingen */
-        grid-row: unset;
-        width: 100%;            /* img past in li */
-        padding: 0 0 1em 0;     /* ruimte onder afbeelding */
-    }
+  footer section:nth-of-type(1) ul li img,
+  footer section:nth-of-type(1) ul li h3,
+  footer section:nth-of-type(1) ul li p,
+  footer section:nth-of-type(1) ul li a {
+      grid-column: unset;     /* verwijder oude grid instellingen */
+      grid-row: unset;
+      width: 100%;            /* img past in li */
+      padding: 0 0 1em 0;     /* ruimte onder afbeelding */
+  }
 
-    footer section:first-of-type img:nth-of-type(1) {
-		width: 20%;
-	}
-	
+/* afbeelding koe, omdat deze als enige direct in de eerste sectie staat */
+  footer section:first-of-type > img {
+    width: 20%;
+  }
+
+  /* styling van de 3 vlakken */
+  footer section:nth-of-type(1) ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer section:nth-of-type(1) ul li img {
+    order: -1; 
+    width: 30%;
+  }
+
+  /* zorgt voor grid van 3 naast elkaar */
+  footer section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5em;
+    font-size: 18px;
+  }
+
+  /* zet p op de 2e rij links */
+  footer > section:nth-of-type(2) p {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+
+  /* zet form op de 3e rij links */
+  footer > section:nth-of-type(2) form {
+    grid-column: 1 / 2;
+    grid-row: 4;
+  }
+
+  /* zet ul met feedback en unsubscribe op de 2e rij in de middelste column */
+  footer > section:nth-of-type(2) ul:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2;
+  }
+
+  /* volg ons in de 2-3e column in de 3e rij */
+  footer > section:nth-of-type(2) h3:nth-of-type(3) {
+    grid-column: 2 / 3;
+    grid-row: 3;
+  }
+
+  /* social iconen onder "volg ons" */
+  footer > section:nth-of-type(2) ul:nth-of-type(2) {
+    grid-column: 2 / 3;
+    grid-row: 4;
+  }
+
+
+  footer section:nth-of-type(2) ul:nth-of-type(4) {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolommen voor de overige LI’s */
+  grid-template-rows: repeat(2, auto);  /* maximaal 2 rijen */
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Eerste LI (select) over de volledige breedte van de eerste rij) */
+footer section:nth-of-type(2) ul:nth-of-type(4) li:first-of-type {
+  grid-column: 1 / -1;  /* neemt hele breedte */
+  justify-self: start;   /* links uitlijnen, kan ook center of end */
+}
+
+/* De overige LI's */
+footer section:nth-of-type(2) ul:nth-of-type(4) li:not(:first-of-type) {
+  justify-self: center;  /* horizontaal gecentreerd binnen hun gridcel */
+}
+/* chatgpt gebruikt voor de vraag hoe ik de eerst li onderscheidend kon aanroepen van de rest */
+
+
+}
+  
+
   /* uitprobeersel */
+  @media (min-width: 38em) {
+
+    footer section:first-of-type > img {
+      width: 15%;
+    }
+
+    footer section:nth-of-type(1) ul li img {
+      order: -1; 
+      width: 20%;
+    }
+
   
 }
 
