@@ -12,6 +12,7 @@
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
+	<a href="#main">naar de hoofdinhoud></a>
 	<header>
 		<a href="https://www.benjerry.nl/"> <img src="images/logo.avif" alt="logo Ben & Jerry, ga naar home"> </a>
 		<nav>
@@ -19,19 +20,17 @@
 			<button aria-hidden="true">
 			<img src="images/burger-menu-svgrepo-com.svg" alt="hamburger menu" />
 			</button>
-			<!-- <form action="search"><input type="search"></form> -->
-			<!-- vragen aan docent -->
 			<ul>
-			<li><a class="active" href="#">Smaken</a></li>
-			<li><a href="#">Verkooppunten</a></li>
-			<li><a href="#">Activisme</a></li>
-			<li><a href="#">Over Ben & Jerry’s</a></li>
-			<li><a href="#">Nieuwtjes</a></li>
-			<li><a href="#">Neem contact met ons op</a></li>
+				<li><a class="active" href="#">Smaken</a></li>
+				<li><a href="#">Verkooppunten</a></li>
+				<li><a href="#">Activisme</a></li>
+				<li><a href="#">Over Ben & Jerry’s</a></li>
+				<li><a href="#">Nieuwtjes</a></li>
+				<li><a href="#">Neem contact met ons op</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
+	<main id="main">
 		<section>
 			<h1>Bohemian Raspberry</h1>
 			<p>Laat je smaakpupillen rocken met de terugkeer van de zoete eerbetoon aan muziekroyalty Queen, ter gelegenheid van de 50e verjaardag van hun legendarische nummer "Bohemian Rhapsody".</p>
@@ -83,8 +82,8 @@
 		</section>
 	</main>
     <footer>
-	<section>
-		<h2>Wij maken dolgraag ijs, maar ons werk krijgt pas echt betekenis wanneer wij ons inzetten om de wereld mooier te maken.</h2>
+		<section>
+			<h2>Wij maken dolgraag ijs, maar ons werk krijgt pas echt betekenis wanneer wij ons inzetten om de wereld mooier te maken.</h2>
 			<ul>
 				<li>
 					<h3>Zorgvuldig uitgekozen ingrediënten</h3>
@@ -113,8 +112,9 @@
 			<h3>Meld je aan voor onze nieuwsbrief</h3>
 			<p>Wij zorgen ervoor dat je als eerste op de hoogte bent van onze nieuwe smaken, fun activiteiten en sociale initiatieven van Ben & Jerry's! Get the scoop!</p>
 			<form>
-				<label for="email">Voer je e-mailadres in</label>
-				<input type="email" id="email" name="email">
+				<label class="visually-hidden" for="email">zoek</label>
+				<input type="email" id="email" name="email" placeholder="Voer je e-mailadres in">
+				<button>></button>
 			</form>
 			<!-- bron: https://www.w3schools.com/html/html_form_input_types.asp -->
 			<h3>Blijf op de hoogte</h3>
@@ -127,7 +127,20 @@
 				</li>
 			</ul>
 			<h3>Volg ons!</h3>
-			<!-- icons -->
+				<ul>
+					<li>
+						<img src="images/facebook.svg" alt="volg ons op Facebook">
+					</li>
+					<li>
+						<img src="images/instagram.svg" alt="volg ons op Instagram">
+					</li>
+					<li>
+						<img src="images/tiktok.svg" alt="volg ons op Tiktok">
+					</li>
+					<li>
+						<img src="images/x.svg" alt="volg ons op X">
+					</li>
+				</ul>
 			<h3>Meer informatie</h3>
 			<ul>
 				<li>
@@ -140,9 +153,18 @@
 					<a href="#">Hoe wij zaken doen</a>
 				</li>
 			</ul>
-			<h3>Overige informatie</h3>
+			<h3 class="visually-hidden">Overige informatie</h3>
 			<!-- hidden -->
 			<ul>
+				<li>
+					<label for="language-select" class="visually-hidden">Kies je taal</label>
+					<select id="language-select" name="language">
+						<option value="Australië">🐨</option>
+						<option value="Oostenrijk">🥨</option>
+						<option value="België">🍟</option>
+						<option value="Brazilië">💃</option>
+					</select>
+				</li>
 				<li>
 					<a href="#">Toegankelijkheid</a>
 				</li>
@@ -162,8 +184,8 @@
 					<a href="#">Sitemap</a>
 				</li>
 			</ul>
-			<!-- Moeten deze allemaal uitgewerkt? -->
 		</section>
 	</footer>
 </body>
+	
 </html>

@@ -27,7 +27,7 @@
 
 h1, h2, h3, h4 {
   	font-family: 'chunk rethunk';
-
+    padding: 0.7em 0 0.7em 0;
 }
 
 /* CSS REMEDY */
@@ -57,13 +57,13 @@ header {
 	/* JOUW CODE HIER - stap 3 */
 	position:sticky;
 	top:0;
-    z-index: 1000;
-    transition: transform 0.4s ease;
-    background-color: var(--wit);
+  z-index: 1000;
+  transition: transform 0.4s ease;
+  background-color: var(--wit);
 }
 
 header.verberg {
-    transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 /* chatgpt voor bovenstaand stukje voor inklappen header */
 
@@ -202,19 +202,12 @@ nav a {
   
 }
 
-header nav a {
-	font-family: 'chunk rethunk';
-	padding: 1em;
-	color: var(--textkleur);
-	text-decoration: none;
-}
-
 header nav a:hover {
 	text-decoration: underline;
 	color: var(--textdonkerblauw);
 }
 
-nav a img {
+nav a img { 
   width:auto;
   height:2em;
 }
@@ -230,53 +223,137 @@ nav a.active {
 /****************************************************************/
 /* styling voor de header als de browser minimaal 38em breed is */
 /****************************************************************/
-@media (min-width:38em) {
-  nav {
-    /* JOUW CODE HIER - stap 8 */
-order:0;
-    
-  }
-  
-  nav button {
-    /* JOUW CODE HIER - stap 6 */
-display:none;
-    
-  }
-  
-  nav ul {
-    /* JOUW CODE HIER - stap 7 */
-	position:static;
-    translate:none;
-    background: none;
-    padding:2em;
-	flex-direction: row;
-	
-  }
-  
-  nav li {
-    /* JOUW CODE HIER - stap 9 */
-    flex-basis:0;
-    flex-grow:0;
+/* Mobile-first header and navigation styling */
+header {
+  min-height:4em;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position:sticky;
+  z-index: 1000;
+  transition: transform 0.4s ease;
+}
 
-    
-  }
-  
-  nav a {
-    /* JOUW CODE HIER - stap 10 */
- flex-direction:column;
-    border: none;
-    
-  }
-  
-  header > a:last-of-type {
-    /* JOUW CODE HIER - stap 10 */
-flex-direction:column;
-    
-  }
+header.verberg {
+  transform: translateY(-100%);
+}
+
+/* Logo wrapper */
+header > a {
+  padding:.5em 0;
+}
+
+/* Logo on mobile */
+header > a:first-of-type {
+  z-index:1000;
+}
+
+header > a:first-of-type img {
+  height:3em;
+}
+
+/* Link icon right side (if present) */
+header > a:last-of-type img {
+  width:auto;
+  height:3.7em;
+  padding: 0.5em;
+}
+
+/* Mobile hamburger button */
+nav button {
+  padding:.5em;
+  appearance:none;
+  background-color:var(--button-background);
+  border:none;
+  border-radius:.25em;
+  font:inherit;
+  text-align:center;
+  color:var(--button-color);
+  position:relative;
+  z-index:100000;
+}
+
+nav button img {
+  height:1.5em;
+}
+
+nav.toonMenu button img {
+  content:url("../images/close-svgrepo-com.svg");
 }
 
 
+/* Menu open state */
+nav.toonMenu ul {
+  padding:1em 1em;
+  height:calc(100dvh - 4em);
+}
 
+/* Link styling */
+nav a {
+  display:flex;
+  align-items:center;
+  font-family: 'chunk rethunk';
+  padding:1em;
+  color:var(--textkleur);
+  text-decoration:none;
+  white-space: nowrap; /* voorkomt dat tekst onder elkaar gaat */
+}
+
+header nav a:hover {
+  text-decoration:underline;
+  color:var(--textdonkerblauw);
+}
+
+nav a img {
+  width:auto;
+  height:2em;
+  margin-right:0.5em; /* beetje ruimte tussen icon en tekst */
+}
+
+nav a.active {
+  font-weight:bold;
+}
+
+/* Desktop layout */
+@media (min-width:38em) {
+  header {
+    justify-content:flex-start;
+  }
+
+  header > a:first-of-type {
+    flex:0 0 auto;
+    margin-right:2rem;
+  }
+
+  nav button {
+    display:none;
+  }
+
+  nav ul {
+    position:static;
+    flex-direction:row;
+    padding:1em 0;
+    height:auto;
+    gap:1rem;
+  }
+
+  nav li {
+    flex-basis:0;
+    flex-grow:0;
+  }
+
+  /* Belangrijk: alle nav links naast elkaar en niet wrappen */
+
+
+  header > a:last-of-type {
+    flex-direction:column;
+  }
+
+  /* Hide contact link only on desktop */
+  nav ul li:last-child {
+    display:none;
+  }
+}
 
 
 /****************************************************************/
@@ -418,7 +495,7 @@ footer section:nth-of-type(2) {
 }
 
 footer section:nth-of-type(2) {
-  padding: 1em;
+  padding: 1em 1em 4em 1em;
 }
 
 footer section:nth-of-type(2) form {
@@ -485,6 +562,59 @@ footer section:nth-of-type(2) ul:nth-of-type(2){
 footer section:nth-of-type(2) img {
   width: 2.5em;
 }
+
+footer p, li {
+  padding: 0.7em 0 0.7em 0;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(4) {
+  padding: 2em 0 2em 0 ;
+}
+
+
+/* small screens: bestaande styling blijft zoals die is */
+
+/* vanaf 38em: 3 items naast elkaar */
+@media (min-width: 38em) {
+    footer section:nth-of-type(1) ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 1.5em;
+    }
+
+    footer section:nth-of-type(1) p {
+      position: static !important;
+      color: var(--textkleur) !important;
+    }
+    /* chatgpt als bron voor !important, anders werkte het niet omdat ik eerder position:absolute heb gebruikt en het anders niet werkte */
+
+    footer section:nth-of-type(1) ul li {
+        display: flex;         
+        flex-direction: column; 
+        font-size: 14px;
+        padding-bottom: 0;
+    }
+
+    footer section:nth-of-type(1) ul li img,
+    footer section:nth-of-type(1) ul li h3,
+    footer section:nth-of-type(1) ul li p,
+    footer section:nth-of-type(1) ul li a {
+        grid-column: unset;     /* verwijder oude grid instellingen */
+        grid-row: unset;
+        width: 100%;            /* img past in li */
+        padding: 0 0 1em 0;     /* ruimte onder afbeelding */
+    }
+
+    footer section:first-of-type img:nth-of-type(1) {
+		width: 20%;
+	}
+	
+  /* uitprobeersel */
+  
+}
+
+
 
 /* hoe ga ik de spacing doen bij footer , margin-top */
 /* moet ik die talen instellen ook doen, alleen select, label visually hidden*/

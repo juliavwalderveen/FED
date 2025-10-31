@@ -23,15 +23,13 @@
 			<button aria-hidden="true">
 			<img src="images/burger-menu-svgrepo-com.svg" alt="hamburger menu" />
 			</button>
-			<!-- <form action="search"><input type="search"></form> -->
-			<!-- vragen aan docent -->
 			<ul>
-			<li><a class="active" href="#">Smaken</a></li>
-			<li><a href="#">Verkooppunten</a></li>
-			<li><a href="#">Activisme</a></li>
-			<li><a href="#">Over Ben & Jerry’s</a></li>
-			<li><a href="#">Nieuwtjes</a></li>
-			<li><a href="#">Neem contact met ons op</a></li>
+				<li><a class="active" href="#">Smaken</a></li>
+				<li><a href="#">Verkooppunten</a></li>
+				<li><a href="#">Activisme</a></li>
+				<li><a href="#">Over Ben & Jerry’s</a></li>
+				<li><a href="#">Nieuwtjes</a></li>
+				<li><a href="#">Neem contact met ons op</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -178,9 +176,18 @@
 					<a href="#">Hoe wij zaken doen</a>
 				</li>
 			</ul>
-			<h3>Overige informatie</h3>
+			<h3 class="visually-hidden">Overige informatie</h3>
 			<!-- hidden -->
 			<ul>
+				<li>
+					<label for="language-select" class="visually-hidden">Kies je taal</label>
+					<select id="language-select" name="language">
+						<option value="Australië">🐨</option>
+						<option value="Oostenrijk">🥨</option>
+						<option value="België">🍟</option>
+						<option value="Brazilië">💃</option>
+					</select>
+				</li>
 				<li>
 					<a href="#">Toegankelijkheid</a>
 				</li>
@@ -200,7 +207,6 @@
 					<a href="#">Sitemap</a>
 				</li>
 			</ul>
-			<!-- Moeten deze allemaal uitgewerkt? -->
 		</section>
 	</footer>
 </body>

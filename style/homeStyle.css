@@ -1,4 +1,4 @@
-body {
+main {
     padding-inline: 1em;
 }
 
@@ -6,23 +6,55 @@ body {
     padding: 1rem;
 } */
 /* nog fixen */
-main section img {
+main section:nth-of-type(1) img, main section:nth-of-type(3) img {
     display: block;
     margin-inline: -1em;
-    /* width: 100dvw; */ */
     position:relative;
-    width: 100vw;
+    width: 100dvw;
+    max-width:unset;
 }
+/* Hulp van Sanne */
 
 main {
 	margin: 0;
 }
 
+footer {
+    padding: 0;
+}
+
+body > a {
+	position: absolute;
+	left: -9999rem;
+}
+
+body > a:focus {
+	left: 0;
+}
+
+main h1 {
+    padding: 0.7em 0 0.7em 0;
+    font-size: 24px;
+}
+
+main h2 {
+    padding: 0.7em 0 0.7em 0;
+}
+
+main h3 {
+    padding: 0.7em 0 0.7em 0;
+    font-size: 16px;
+}
+
+/* main p {
+    padding: 1em 0 1em 0;
+} */
+
 /* plaatje boven h1 */
 section:first-of-type {
 	display: flex;
 	flex-direction: column; 
-	
+	padding: 0 0 3em 0;
 }
 
 main > section:first-of-type img:nth-of-type(1) {
@@ -32,25 +64,15 @@ main > section:first-of-type img:nth-of-type(1) {
 
 /* p op de hele pagina juiste format */
 section > p {
-	padding: 1em;
     font-size: 13px;
-}
-
-section ul li p {
-    padding: 0;
-}
-
-section:nth-of-type(4) li h2 {
-    padding: 0;
 }
 
 /* linkjes stylen */
 main section > a {
-    /* width: auto; */
     font-family: 'proxima nova';
     font-weight: 600;
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 0.8em;
+    line-height: 1em;
 	border-radius: 3em;
     transition: color .15s 
         ease-in-out, background-color .15s 
@@ -58,7 +80,6 @@ main section > a {
         ease-in-out, box-shadow .15s 
         ease-in-out;
 	padding: .625rem 1.5rem;
-	text-align: center;
 	text-decoration: none;
 	display: inline-flex;
 	justify-content: center;
@@ -66,6 +87,7 @@ main section > a {
     background-color: var(--geel); 
     color: black;
     align-self: start;
+    margin: 1.5em 0 0 0;
 }
 /* chatgpt als bron voor inline flex, transition waardes etc van originele site, Sanne als bron voor align-self:start */
 
@@ -74,16 +96,44 @@ main section > a:hover {
     background-color: #fae673;
 }
 
-section:nth-of-type(3) {
+/* sectie 2 */
+main section:nth-of-type(2) {
+    padding: 0 0 3em 0;
+}
+
+main section:nth-of-type(2) img {
+    border-radius: 0.75em;
+}
+
+
+/* sectie 3 */
+main section:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     background-color: var(--achtergronddonkerblauw);
     color: var(--wit);
     padding-bottom: 2em;
+    margin-inline: -1em;
+    position:relative;
+    width: 100dvw;
+    max-width:unset;   
 }
 
 section:nth-of-type(3) img {
     order: -1; /* zet de afbeelding boven de h2 */
+}
+
+
+section:nth-of-type(3) h2 {
+    padding: 0.7em 0 0 0.7em;
+}
+
+section:nth-of-type(3) p {
+    padding: 1em;
+}
+
+section:nth-of-type(3) a {
+    margin: 1em 0 0 1em;
 }
 
 /* styling 4e sectie */
@@ -106,12 +156,17 @@ section:nth-of-type(4) li {
 
 section:nth-of-type(4) li img {
   order: -1;
+  border-radius: 0.5em;
 }
 
 section:nth-of-type(4) a {
     color:#002f87;
     font-family: 'proxima nova';
+    font-size: 12px;
+    padding:0.5em 0 0 0;
+}
 
-
-
+section ul li p {
+    padding: 0;
+    font-size: 12px;
 }

@@ -4,6 +4,18 @@ html {
 	}
 }
 
+main {
+	padding: 1em;
+}
+
+main section:first-of-type img:nth-of-type(1), main section:first-of-type img:nth-of-type(2) {
+    display: block;
+    margin-inline: -1em;
+    position:relative;
+    width: 100dvw;
+    max-width:unset;
+}
+
 body > a {
 	position: absolute;
 	left: -9999rem;
@@ -19,7 +31,7 @@ main {
 
 h1, h2, h3, h4 {
 	font-family: 'chunk rethunk';
-    padding: 0.7em;
+	padding: 0.7em 0 0.7em 0
 }
 
 section:first-of-type{
@@ -51,7 +63,7 @@ html:has( nav.toonMenu ) section:first-of-type img:nth-of-type(2) {
 }
 
 main > section:nth-of-type(1) h1, p{
-	padding: 0.7em;
+	padding: 0.7em 0 0.7em 0;
 }
 
 
@@ -68,6 +80,7 @@ fieldset {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
+	padding: 1em;
 }
 
 main input:nth-of-type(1) {
@@ -77,16 +90,15 @@ main input:nth-of-type(1) {
 	appearance: none;
 }
 
-select {
+main select:nth-of-type(1) {
 	padding: 1em;
 	border-radius: 0.75em;
 	border: solid 2px grey;
 	appearance: none;
 	font-family: 'chunk rethunk';
 }
-/* hover nog doen */
 
-select:hover {
+main select:nth-of-type(1):hover {
 	text-decoration: underline;
 }
 
@@ -108,8 +120,8 @@ main > section:nth-of-type(2) span{
 main > section:nth-of-type(2) span:hover {
 	background-color: #ccc;
 }
-
 /* hover op deze hierboven */
+
 main > section:nth-of-type(2) a{
 	font-family: 'proxima nova';
 	color: var(--textkleur);
@@ -157,4 +169,57 @@ main > section:nth-of-type(3) {
 main > section:nth-of-type(3) iframe{
 	width: 90%;
 	padding: 1.5em;
+}
+
+/* wanneer scherm minimaal 38em is */
+@media (min-width:38em) {
+
+/* Hero section */
+	section:first-of-type {
+	position: relative; /* container voor absolute positioning */
+	}
+
+	p {
+		font-size: 12px;
+		max-width: 100% !important;
+		padding: 0 2em 0 2em;
+	}
+
+	/* Hero afbeelding */
+	/* 
+	/* Optioneel mediaquery voor desktop grotere spacing */
+	section:first-of-type h1 {
+		top: 2em;
+		left: 2em;
+		max-width: 40%;
+	}
+
+	section:first-of-type p {
+		top: 6em;
+		left: 2em;
+		max-width: 40%;
+	}
+}
+
+/* producten vanaf 38em */
+@media (min-width: 38em) {
+    main > section:nth-of-type(2) ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+	main input:nth-of-type(1) {
+		display: block;
+		width: 100%;
+		margin: 1em;
+	}
+
+	main select {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+
+	}
+
+	/* chatgpt als bron voor centreren van deze input */
+	
 }
