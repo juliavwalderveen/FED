@@ -182,12 +182,10 @@ main > section:nth-of-type(3) iframe{
 	position: relative; /* container voor absolute positioning */
 	}
 
-	p {
+	main p {
 		font-size: 12px;
-		max-width: 100% !important;
-		padding: 0 2em 0 2em;
+		max-width: 100%;
 	}
-/* chatgpt als bron voor important, om eerdere code te overschrijven */
 	/* Hero afbeelding */
 	/* 
 	/* Optioneel mediaquery voor desktop grotere spacing */
@@ -200,7 +198,6 @@ main > section:nth-of-type(3) iframe{
 	section:first-of-type p {
 		top: 6em;
 		left: 2em;
-		max-width: 40%;
 	}
 }
 
@@ -243,8 +240,6 @@ main > section:nth-of-type(3) iframe{
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 15em 15em;
 		position: relative;
-		min-height: 70vh;
-		padding: 0;
 	}
 
 	/* Hero afbeelding */
@@ -259,7 +254,7 @@ main > section:nth-of-type(3) iframe{
 	}
 	/* beetje chatgpt gebruikt om te zorgen dat de afbeelding hele grid en hele pagina goed gebruikt*/
 
-	/* zet tekst in grid op foto*/
+	/* zet h1 in grid op foto*/
 	main > section:nth-of-type(1) h1 {
 		grid-column: 1 / 2;
 		grid-row: 1 / 2;
@@ -271,7 +266,7 @@ main > section:nth-of-type(3) iframe{
 		font-size: 36px;
 	}
 
-	/* Paragraaf bovenop hero */
+	/* zet de p in grid op foto */
 	main > section:nth-of-type(1) p {
 		grid-column: 1 / 2;
 		grid-row: 2 / 3;
@@ -293,5 +288,9 @@ main > section:nth-of-type(3) iframe{
 	main select:nth-of-type(1) {
 		width: 50%;
 		font-size: 18px;
+	}
+
+	main > section:nth-of-type(3) iframe {
+		width: 55%;
 	}
 }

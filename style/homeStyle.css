@@ -46,9 +46,9 @@ main h3 {
     font-size: 16px;
 }
 
-/* main p {
-    padding: 1em 0 1em 0;
-} */
+main > section:nth-of-type(1) img:nth-of-type(2) {
+	display:none;
+}
 
 /* plaatje boven h1 */
 section:first-of-type {
@@ -112,7 +112,7 @@ main section:nth-of-type(3) {
     flex-direction: column;
     background-color: var(--achtergronddonkerblauw);
     color: var(--wit);
-    padding-bottom: 2em;
+    padding: 0 0 2em 0;
     margin-inline: -1em;
     position:relative;
     width: 100dvw;
@@ -166,7 +166,174 @@ section:nth-of-type(4) a {
     padding:0.5em 0 0 0;
 }
 
+time {
+    font-family: 'proxima nova';
+    color: var(--grijs);
+    order: -1;
+    padding: 1em 0 0 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 section ul li p {
     padding: 0;
     font-size: 12px;
+}
+
+/* vanaf 38em */
+
+@media (min-width: 38em) {
+    main section:nth-of-type(2) {
+        width: 50%;
+    }
+
+    main section:nth-of-type(4) {
+        padding: 1em 0 1em 0;
+    }
+
+    section:nth-of-type(4) ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+	padding: 1em;
+	margin: 0;
+    }
+
+    section:nth-of-type(4) h3{
+        font-size: 13px;
+        line-height: 1.5em;
+    }
+}
+
+@media (min-width: 54em) {
+    /* juiste hero afbeelding zichtbaar */
+    main > section:nth-of-type(1) img:nth-of-type(2) {
+		display: block;
+	}
+
+    main > section:nth-of-type(1) img:nth-of-type(1) {
+		display: none;
+	}
+
+    /* tekst over afbeelding */
+
+	/* grid maken van hero secte*/
+	main > section:nth-of-type(1) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 15em 15em;
+		position: relative;
+	}
+
+	/* Hero afbeelding */
+	main > section:nth-of-type(1) img:nth-of-type(2) {
+		grid-column: 1 / -1 ;
+		grid-row: 1 / 4;
+		width: calc(100vw + 2em); 
+		height: 100%;
+		object-fit: cover;
+		max-width: unset;
+	}
+	/* beetje chatgpt gebruikt om te zorgen dat de afbeelding hele grid en hele pagina goed gebruikt*/
+
+	/* zet h1 in grid op foto*/
+	main > section:nth-of-type(1) h1 {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		align-self: end;
+		padding: 1em 1em;
+		z-index: 100;
+		color: white;
+		padding: 0 2em 1em .8em;
+		font-size: 36px;
+	}
+
+	/* zet de p in grid op foto */
+	main > section:nth-of-type(1) p {
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+		align-self: start;
+		padding: 0 2em 2em 2em;
+		z-index: 100;
+		color: white;
+		font-size: 16px;
+		line-height: 1.5em;
+	}
+
+    main > section:nth-of-type(1) a {
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+		align-self: center;
+		z-index: 100;
+        margin: 2em auto 1em 2em;
+		font-size: 16px;
+	}
+
+
+    /* Doe mee sectie grid maken  */
+    main section:nth-of-type(3) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* afbeeldinh neemt column 1 tot 2 en rij 1 tot 4 in */
+    main section:nth-of-type(3) img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        width: 100%;
+    }
+
+    /* h2 rechts, bovenaan */
+    main section:nth-of-type(3) h2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        padding: 0 2em 0 .6em;
+        align-self: end;
+        font-size: 28px;
+    }
+
+    /* p rechts middenin */
+    main section:nth-of-type(3) p {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        padding: 1em 5em 0 1em;
+        align-self: start;
+        font-size: 16px;
+    }
+
+    /* a rechts onderaan */
+    main section:nth-of-type(3) a {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        align-self: start;
+        margin: 5em auto 0 0.8em;
+        font-size: 16px;
+        padding: 1em;
+    }
+
+    /* topverhalen sectie */
+    section:nth-of-type(4) h3 {
+        font-size: 20px;
+    }
+
+    section:nth-of-type(4) p, section:nth-of-type(4) a {
+        font-size: 16px;
+    }
+    
+    /* footer */
+    footer h2 {
+        font-size: 30px;
+    }
+
+    footer section:nth-of-type(1) ul li img {
+        width: 30%;
+    }   
+
+    footer section:nth-of-type(1) ul li p, footer section:nth-of-type(1) ul li a {
+        font-size: 16px;
+    }
+
 }

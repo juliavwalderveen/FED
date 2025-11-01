@@ -23,6 +23,7 @@
   --geel: #ffbc0e;
 	--textdonkerblauw: #002f87;
   --achtergronddonkerblauw: #1D1459;
+  --grijs: #595959;
 }
 
 h1, h2, h3, h4 {
@@ -349,83 +350,6 @@ nav a.active {
     flex-direction:column;
   }
 }
- 
-
-
-/****************************************************************/
-/* styling voor de header als de browser minimaal 57em breed is */
-/****************************************************************/
-@media (min-width:54em) {
-  header > a:last-of-type,
-  nav a {
-    /* JOUW CODE HIER - stap 11 */
-    flex-direction:row;
-    
-    
-  }
-}
-
-/* header {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: sticky;
-	top: 0;
-}
-
-nav {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	translate: -100%;
-	transition: 2s;
-	background-color: var(--wit);
-}
-
-nav.is-open {
-	translate: 0%;
-} */
-
-/* @media (min-width:38em) {
-  	header > button {
-    display: none;
-	}
-  }
-  
-nav {
-	position: static;
-	translate: 0%;
-	background: none;
-}
-  
-nav button {
-	display: none;
-}
-
-nav ul {
-	display: flex;
-	gap: 1em;
-}
-  
-nav a {
-	border: none;
-	flex-direction: column;
-    
-}
-  
-header > a:last-of-type {
-	flex-direction: column;
-    
-} */
-
-/* header img {
-	width: 10em;
-} */
-
-
 
 
 /* FOOTER */
@@ -655,16 +579,16 @@ footer section:nth-of-type(2) ul:nth-of-type(4) {
   footer section:nth-of-type(2) ul:nth-of-type(4) {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 kolommen voor de overige LI’s */
-  grid-template-rows: repeat(2, auto);  /* maximaal 2 rijen */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto); 
   gap: 1rem;
   align-items: center;
 }
 
 /* Eerste LI (select) over de volledige breedte van de eerste rij) */
 footer section:nth-of-type(2) ul:nth-of-type(4) li:first-of-type {
-  grid-column: 1 / -1;  /* neemt hele breedte */
-  justify-self: start;   /* links uitlijnen, kan ook center of end */
+  grid-column: 1 / -1; 
+  justify-self: start; 
 }
 
 /* De overige LI's */
@@ -677,21 +601,18 @@ footer section:nth-of-type(2) ul:nth-of-type(4) li:not(:first-of-type) {
 }
   
 
-  /* uitprobeersel */
-  @media (min-width: 38em) {
-
-    footer section:first-of-type > img {
-      width: 15%;
-    }
-
-    footer section:nth-of-type(1) ul li img {
-      order: -1; 
-      width: 20%;
-    }
-
+/****************************************************************/
+/* styling voor de header als de browser minimaal 57em breed is */
+/****************************************************************/
+@media (min-width:54em) {
+  header > a:last-of-type,
+  nav a {
+    /* JOUW CODE HIER - stap 11 */
+    flex-direction:row;
+    
+  }
   
 }
-
 
 
 /* hoe ga ik de spacing doen bij footer , margin-top */

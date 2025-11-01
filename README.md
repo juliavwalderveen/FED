@@ -189,12 +189,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  studentassistenten hebben me goed geholpen met mijn footer, we hebben het plaatje adhv grid links van de rest vd tekst gekregen en ik ben zelf ondertussen verder gaan puzzelen, voor het eind van de voortgang was deze eigenlijk al bijna helemaal zoals hij moest zijn. Lettertype was ook easy aangepast gelukkig! Ik had net de verkeerde selector
 
 </details>
 
