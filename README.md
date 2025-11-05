@@ -136,11 +136,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Noa             | Melissa        | ik              | Randi         |
-  | img 1e sectie.  | caroussel met  | Mag mn span?    | ---           |
-  | 3e sectie tekst | 3 plaatjes met | Youtube filmpje | en dan ik dat |
-  | scrollend.      | grid           | werkt niet.     |               | 
-  | ...             | ...            | ...             | ...           |
+  | Noa             | Melissa        | ik              | Randi            |
+  | img 1e sectie.  | caroussel met  | Mag mn span?    | ---              |
+  | 3e sectie tekst | 3 plaatjes met | Youtube filmpje | geen specifieke  |
+  | scrollend.      | grid           | werkt niet.     | vraag            | 
+  | ...             | ...            | ...             | ...              |
 
 
   ### Verslag van meeting
@@ -161,7 +161,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - labels zijn nu aanwezig
+  - mn html validator is goed, heb alleen 1 info, geen errors oid
+  - overal waar een header hoort, staat deze nu wel. Elke sectie begin ik nu met een h2, waar deze niet visueel     hoeft zijn deze hidden
+  - ik heb list elements waar nodig 
+  - all img's die een alt nodig hebben, hebben een alt 
+  - img die geen alt nodig hebben, hebben een null alt, zoals de decoratieve koe in de footer
+  - ook tekst die in een afbeelding staan, staan in de alt, zoals bij de producten op de pagina smaken
+  - links zijn duidelijk links, zowel in light als in dark mode
+  - light en dark mode doen het beide
+  
+Bovenstaande zijn allemaal verbeteringen ten opzichte van wat het eerder was.
+
 
 </details>
 
@@ -207,13 +218,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Het heeft even geduurd, maar hoe slecht ik begin van deze periode het verband kon zien en kon bedenken welke attributen en selectoren ik nodig had, gaat dit nu eigenlijk best soepel. Ik kom er meestal zelf uit zonder op te hoeven zoeken. 
+  Het overzicht en debuggen adhv inspecten lukt me ook steeds beter
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  uitvinden welke css code ik moet gebruiken blijft lastig, met grid, wanneer ik justify-content, align-content etc gebruik. Grid en flex sowieso blijven lastig maar wordt wel steeds logischer, alleen zelf alles uitzoeken duurt lang omdat ik toch veel moet uitproberen totdat ik de juiste code heb.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -231,8 +243,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. (https://www.a11yproject.com/posts/how-to-hide-content)
+  2. chatGPT
+  3. Sanne & studentassistenten
+  4. Randi 
+  5. Noa 
+  6. Nienke (studentassistent)
+  7. w3schools voor reminden hoe ik bepaalde selectoren precies gebruik
+
 
 </details>

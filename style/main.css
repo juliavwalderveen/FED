@@ -72,6 +72,7 @@ p {
   color: var(--textkleur);
 }
 
+/* beetje hulp met debuggen van Nienke, studentassistent andere klas */
 @media (prefers-color-scheme: dark) {
   footer:nth-of-type(2) h3, p, a {
     color: var(--altijdwit);
