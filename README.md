@@ -79,10 +79,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/FramebreakdownschetsenSmallScreen.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\FED\readme-images\dynamisch1.png" width="375px" alt="breakdown van een dynamisch deel">
+  ik heb hiervan heel dom geen screenshot gemaakt begin vd periode, de zoekbalk is nieuw en stond er eerder niet, die zit dus ook niet in mijn code
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\FED\readme-images\dynamisch2.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -173,6 +174,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
 Bovenstaande zijn allemaal verbeteringen ten opzichte van wat het eerder was.
 
+  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\FED\readme-images\WCAGpagina1.jpg" width="375px"  alt="WCAG Pagina 1">
+  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\FED\readme-images\WCAGpagina2.jpg" width="375px" alt="WCAG Pagina 2">
+  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\FED\readme-images\WCAGpagina3.jpg" width="375px" alt="WCAG Pagina 3">
+  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\FED\readme-images\WCAGpagina4.jpg" width="375px" alt="WCAG Pagina 4">
+  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\FED\readme-images\WCAGpagina5.jpg" width="375px" alt="WCAG Pagina 5">
 
 </details>
 
