@@ -12,7 +12,6 @@
 }
 
 :root {
-	/* startje */
 	--textkleur:#141414;
 	--wit:#ffffff;
 	--lichtblauw:#77ddf5;
@@ -24,11 +23,30 @@
 	--textdonkerblauw: #002f87;
   --achtergronddonkerblauw: #1D1459;
   --grijs: #595959;
+  --link:#002f87; 
+  /* deze blijft na darkmode ook wit */
+  --altijdwit: #ffffff;
 }
 
-h1, h2, h3, h4 {
-  	font-family: 'chunk rethunk';
-    padding: 0.7em 0 0.7em 0;
+@media (prefers-color-scheme: dark) {
+	:root {
+		--textkleur:#f2f2f2;
+		--wit:#112938;
+		--lichtblauw:#4da3ff;
+		--superlichtblauw:#0a1a27;
+		--donkerblauw:#001347;
+		--footerEerste:#193a4b;
+		--footerTweede:#234a22;
+		--geel:#e0a800;
+		--textdonkerblauw:#8db3ff;
+		--achtergronddonkerblauw:#0b0933;
+    --link:#94E3DD; 
+		--grijs:#bfbfbf;
+	}
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 /* CSS REMEDY */
@@ -37,13 +55,33 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
+body > a:first-of-type { 
+    background-color: var(--wit);
+    color: var(--textkleur);
+    z-index: 10000;
+}
+
+h1, h2, h3, h4 {
+  	font-family: 'chunk rethunk';
+    padding: 0.7em 0 0.7em 0;
+    color: var(--textkleur);
+}
+
 p {
 	font-family: 'proxima nova';
+  color: var(--textkleur);
+}
+
+@media (prefers-color-scheme: dark) {
+  footer:nth-of-type(2) h3, p, a {
+    color: var(--altijdwit);
+  }
 }
 
 img {
 	max-width: 100%;
 }
+
 
 header {
 	min-height:4em;
@@ -96,8 +134,6 @@ header > a:last-of-type img {
   padding: 0.5em
 }
 
-
-
 /***************/
 /* MENU BUTTON */
 /***************/
@@ -117,10 +153,6 @@ nav button {
   /* JOUW CODE HIER - stap 5 */
   position:relative;
   z-index:100000;
-}
-
-nav button img {
-  height:1.5em;
 }
 
 /* als menu open is */
@@ -149,7 +181,7 @@ nav ul {
   
   display:flex;
   flex-direction: column;
-  gap:2em;
+  /* gap:2em; */
   align-content:start;
   
   background:var(--wit);
@@ -276,6 +308,13 @@ nav button {
 
 nav button img {
   height:1.5em;
+  filter: invert();
+}
+@media (prefers-color-scheme: dark) {
+  nav button img {
+    height:1.5em;
+    filter: invert();
+  }
 }
 
 nav.toonMenu button img {
@@ -403,19 +442,23 @@ footer section:nth-of-type(1) ul li h3 {
 footer section:nth-of-type(1) ul li a {
     grid-row: 3;
     grid-column: 2;
-    padding: 0.7em 0 1em 0.7em;
+    padding: 0.7em 0 1em 0;
     font-family: 'proxima nova';
+    color: var(--link);
+}
+
+footer section:nth-of-type(1) ul li p {
+    padding: .7em 0 .7em 0;
 }
  /* bij deze grid hebben de studentassistenten mij geholpen tijdens voortgangsgesprek */
 
 footer section:nth-of-type(2) {
     background: var(--footerTweede);
-    padding-top: 3em;
-    color: var(--wit)
+    padding: 1em 1em 4em 1em;
 }
 
-footer section:nth-of-type(2) {
-  padding: 1em 1em 4em 1em;
+footer section:nth-of-type(2) h3, footer section:nth-of-type(2) p, footer section:nth-of-type(2) a {
+  color: var(--altijdwit)
 }
 
 footer section:nth-of-type(2) form {
@@ -459,7 +502,7 @@ footer section:nth-of-type(2) ul li {
 
 footer section:nth-of-type(2) ul li a {
     text-decoration: none;
-    color: var(--wit);
+    color: var(--altijdwit);
     font-family: 'proxima nova';
     font-size: 0.8em;
 }
@@ -471,6 +514,7 @@ footer section:nth-of-type(2) h3 {
 
 footer section:nth-of-type(2) p {
   font-size: .8em;
+  padding: 0.7em 0 0.7em 0;
 }
 
 /* socials stijlen */
@@ -481,10 +525,6 @@ footer section:nth-of-type(2) ul:nth-of-type(2){
 
 footer section:nth-of-type(2) img {
   width: 2.5em;
-}
-
-footer p, li {
-  padding: 0.7em 0 0.7em 0;
 }
 
 /* zodat deze afstand heeft van de rest */

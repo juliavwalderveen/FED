@@ -25,6 +25,10 @@ body > a:focus {
 	left: 0;
 }
 
+body {
+	background-color: var(--wit);
+}
+
 main {
 	margin: 0;
 }
@@ -59,10 +63,6 @@ main > section:first-of-type img:nth-of-type(2){
 html:has( nav.toonMenu ) section:first-of-type img:nth-of-type(2) {
 	opacity: 0;
 	transition: 0s;
-}
-
-main > section:nth-of-type(1) h1, p{
-	padding: 0.7em 0 0.7em 0;
 }
 
 /* hero foto voor groter scherm verbergen */
@@ -103,7 +103,7 @@ main select:nth-of-type(1) {
 
 main select:nth-of-type(1):hover {
 	text-decoration: underline;
-}
+} 	
 
 /* styling producten */
 main > section:nth-of-type(2) span{

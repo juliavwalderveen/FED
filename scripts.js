@@ -1,5 +1,4 @@
-/* JOUW CODE HIER - stap 4 */
-
+// bron: codepen document van Sanne
 // stap 1: zoek de menu-button op en sla die op in een variabele
 let deButton = document.querySelector("nav button");
 let deUl = document.querySelector("nav");
@@ -12,7 +11,7 @@ function toggleMenu() {
   deUl.classList.toggle("toonMenu");
 }
 
-// header inklappen, met behulp van Chatgpt
+// header inklappen, bron chatgpt
 let vorigeScrollPositie = window.scrollY;
 
 window.addEventListener("scroll", () => {

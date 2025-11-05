@@ -112,8 +112,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - a voor het hele artikel
-  - Youtube filmpje nog fixen
+  - a om het hele artikel
+  - Youtube filmpje later nog fixen
   - html is goed
   - button beter geen onclick
   
@@ -130,7 +130,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  begonnen met css, so far so good. Wel lastig om weer op te halen maar het gaat prima
+  begonnen met css, so far so good. Wel lastig om weer op te halen maar het gaat prima. 
 
 
   ### Agenda voor meeting

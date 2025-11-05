@@ -1,11 +1,17 @@
+html {
+	@media (prefers-reduced-motion:no-preference){
+			scroll-behavior: smooth;
+	}
+}
+
 main {
     padding-inline: 1em;
 }
 
-/* /* main section h1, main section h2, main section h3, main section p {
-    padding: 1rem;
-} */
-/* nog fixen */
+main {
+	margin: 0;
+}
+
 main section:nth-of-type(1) img, main section:nth-of-type(3) img {
     display: block;
     margin-inline: -1em;
@@ -13,11 +19,7 @@ main section:nth-of-type(1) img, main section:nth-of-type(3) img {
     width: 100dvw;
     max-width:unset;
 }
-/* Hulp van Sanne */
-
-main {
-	margin: 0;
-}
+/* met behulp van Sanne */
 
 footer {
     padding: 0;
@@ -30,6 +32,10 @@ body > a {
 
 body > a:focus {
 	left: 0;
+}
+
+body {
+	background-color: var(--wit);
 }
 
 main h1 {
@@ -57,7 +63,7 @@ section:first-of-type {
 	padding: 0 0 3em 0;
 }
 
-main > section:first-of-type img:nth-of-type(1) {
+main > section:nth-of-type(1) img:nth-of-type(1) {
   	order: -1; 
 	padding: 0;
 }
@@ -105,7 +111,6 @@ main section:nth-of-type(2) img {
     border-radius: 0.75em;
 }
 
-
 /* sectie 3 */
 main section:nth-of-type(3) {
     display: flex;
@@ -120,16 +125,18 @@ main section:nth-of-type(3) {
 }
 
 section:nth-of-type(3) img {
-    order: -1; /* zet de afbeelding boven de h2 */
+    order: -1; 
 }
-
+/* afbeelding boven de h2 */
 
 section:nth-of-type(3) h2 {
     padding: 0.7em 0 0 0.7em;
+    color: var(--altijdwit);
 }
 
 section:nth-of-type(3) p {
     padding: 1em;
+    color: var(--altijdwit);
 }
 
 section:nth-of-type(3) a {
@@ -160,7 +167,7 @@ section:nth-of-type(4) li img {
 }
 
 section:nth-of-type(4) a {
-    color:#002f87;
+    color:var(--link);
     font-family: 'proxima nova';
     font-size: 12px;
     padding:0.5em 0 0 0;
@@ -192,17 +199,17 @@ section ul li p {
         padding: 1em 0 1em 0;
     }
 
+    section:nth-of-type(4) h3{
+        font-size: 13px;
+        line-height: 1.5em;
+    }
+
     section:nth-of-type(4) ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 	padding: 1em;
 	margin: 0;
-    }
-
-    section:nth-of-type(4) h3{
-        font-size: 13px;
-        line-height: 1.5em;
     }
 }
 
@@ -335,5 +342,4 @@ section ul li p {
     footer section:nth-of-type(1) ul li p, footer section:nth-of-type(1) ul li a {
         font-size: 16px;
     }
-
 }
