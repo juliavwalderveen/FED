@@ -161,9 +161,9 @@ nav.toonMenu button img {
   /* JOUW CODE HIER - stap 5 */
   /* url kruisje: https://assets.codepen.io/274456/ui-icon-cross.svg */
   content:url("../images/close-svgrepo-com.svg")
-
-  
 }
+
+/* bron van de gehele header eigenlijk: Sanne */
 
 
 
@@ -184,29 +184,14 @@ nav ul {
   flex-direction: column;
   /* gap:2em; */
   align-content:start;
-  
-  background:var(--wit);
-
-  /* background-color: #f006; */
-  
+  background:var(--wit);  
   
   /* JOUW CODE HIER - stap 1 */
   position:fixed;
-/*   top:0;
-  bottom:0;
-  left:0;
-  right:0; */
-  
-  /* inset:0; */
+
   top:4em;
   left:0;
   right:0;
-  
-  /* JOUW CODE HIER - stap 2 */
-/* translate: 0 -100%; */
-/* met chatgpt gevraagd hoe ik het horizontaal uit laat klappen */
-/*   translate: -0 60%;
- */ 
 
   
   /* JOUW CODE HIER - stap 4 */
@@ -217,9 +202,6 @@ transition: 1s;
 /* als menu open is */
 nav.toonMenu ul {
   /* JOUW CODE HIER - stap 4 */
-/* translate:0 0%; */
-	/* padding: */
-
 	padding:1em 1em;
 	height:calc( 100dvh - 4em );
   
@@ -309,8 +291,8 @@ nav button {
 
 nav button img {
   height:1.5em;
-  filter: invert();
 }
+
 @media (prefers-color-scheme: dark) {
   nav button img {
     height:1.5em;
@@ -561,6 +543,7 @@ footer section:nth-of-type(2) ul:nth-of-type(4) {
       width: 100%;            /* img past in li */
       padding: 0 0 1em 0;     /* ruimte onder afbeelding */
   }
+  /* chatgpt */
 
 /* afbeelding koe, omdat deze als enige direct in de eerste sectie staat */
   footer section:first-of-type > img {
@@ -651,12 +634,5 @@ footer section:nth-of-type(2) ul:nth-of-type(4) li:not(:first-of-type) {
     /* JOUW CODE HIER - stap 11 */
     flex-direction:row;
     
-  }
-  
+  } 
 }
-
-
-/* hoe ga ik de spacing doen bij footer , margin-top */
-/* moet ik die talen instellen ook doen, alleen select, label visually hidden*/
-/* search bar vakje */
-/* a's op homepagina */
