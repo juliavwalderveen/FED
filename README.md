@@ -174,11 +174,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
 Bovenstaande zijn allemaal verbeteringen ten opzichte van wat het eerder was.
 
-  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\FED\readme-images\WCAGpagina1.jpg" width="375px"  alt="WCAG Pagina 1">
-  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\FED\readme-images\WCAGpagina2.jpg" width="375px" alt="WCAG Pagina 2">
-  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\FED\readme-images\WCAGpagina3.jpg" width="375px" alt="WCAG Pagina 3">
-  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\FED\readme-images\WCAGpagina4.jpg" width="375px" alt="WCAG Pagina 4">
-  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\FED\readme-images\WCAGpagina5.jpg" width="375px" alt="WCAG Pagina 5">
+  <img src="readme-images/WCAGpagina1.jpg" width="375px"  alt="WCAG Pagina 1">
+  <img src="readme-images/WCAGpagina2.jpg" width="375px" alt="WCAG Pagina 2">
+  <img src="readme-images/WCAGpagina3.jpg" width="375px" alt="WCAG Pagina 3">
+  <img src="readme-images/WCAGpagina4.jpg" width="375px" alt="WCAG Pagina 4">
+  <img src="readme-images/WCAGpagina5.jpg" width="375px" alt="WCAG Pagina 5">
 
 </details>
 
