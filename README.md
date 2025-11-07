@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\ScreenshotSmallScreen.png" width="375px" alt="Homepagina">
+  <img src="readme-images/ScreenshotSmallScreen.png" width="375px" alt="Homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="C:\Users\julia\OneDrive\Documenten\hva\jaar 3\FED\ScreenshotSmallScreen2.png" width="375px" alt="Pagina: Onze smaken">
+  <img src="readme-images/ScreenshotSmallScreen2.png" width="375px" alt="Pagina: Onze smaken">
  
 </details>
 
